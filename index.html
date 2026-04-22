@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lendify</title>
+    <link href="./dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        .div1:hover {
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        .top {
+            height: 100vh;
+            position: relative;
+            background-image: url(./images/bg1.jpeg);
+            background-size: cover;
+            opacity: 100%
+        }
+
+        .footericons{
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====Navbar====== -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-info fst-italic fw-bold" href="#">Lendify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="./categories.html" class="nav-link" target="_blank">Categories</a>
+                    <a href="#items" class="nav-link">Items</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =======Home Section======= -->
+    <section id="home" class="container-fluid bg-light text-center d-flex align-items-center justify-content-center flex-column pb-5 top">
+        <div class="container">
+            <h1 class="display-5">Rent Anything, Anytime</h1>
+            <p class="lead">The right platform to borrow and lend items around you.</p>
+            <input class="form-control w-50 mx-auto" placeholder="Search Item">
+        </div>
+    </section>
+
+    <!-- ======Categories======= -->
+    <section class="p-5" id="categories">
+        <div class="container">
+            <h2 class="text-center mb-4">Categories</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="./images/camera.png" alt="" height="50px" width="50px">
+                    Electronics
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/tools2.png" alt="" height="40px" width="40px">
+                    Tools
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/events.png" alt="" height="40px" width="40px">
+                    Events
+                </div>
+                <div class="col-md-3">
+                    <img src="./images/outdoors.png" alt="" height="40px" width="40px">
+                    Outdoor
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========Items====== -->
+    <section id="items" class="row p-5 bg-light">
+        <h2 class="text-center mb-4">Featured Items</h2>
+
+        <div class="col-md-4 div1">
+            <div class="card-body">
+                <img src="./images/canoncamera.jpeg" alt="canoncamera" height="230px">
+                <h6 class="fw-bold">Canon Camera</h6>
+                <p>51MP high-resolution camera <br> Ksh 50 per hour</p>
+                <button class="btn bg-primary text-light">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="col-md-4 div1">
+            <div class="card-body">
+                <img src="./images/drillmachine.jpeg" alt="drillmachine" height="230px">
+                <h6 class="fw-bold">Drill Machine</h6>
+                <p>Makita Electric Cordless Drill<br> Ksh 1500</p>
+                <button class="btn bg-primary text-light">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="col-md-4 div1">
+            <div class="card-body">
+                <img src="./images/partychairs.jpeg" alt="partychairs" height="230px">
+                <h6 class="fw-bold">Party Chairs</h6>
+                <p>White fold party chairs<br> Ksh 75 per chair</p>
+                <button class="btn bg-primary text-light">Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid row p-5 bg-light">
+        <div class="col-md-4 div1">
+            <div class="card-body">
+                <img src="./images/picnicbasket.jpeg" alt="picnicbasket" height="230px">
+                <h6 class="fw-bold">Picnic Basket</h6>
+                <p>30l foldable picnic basket with thermal function<br> Ksh 1500 for a day</p>
+                <button class="btn bg-primary text-light">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="col-md-4 div1">
+            <div class="card-body">
+                <img src="./images/scooter.jpeg" alt="scooter" height="230px">
+                <h6 class="fw-bold">Scooter</h6>
+                <p>Well-maintained scooter110 125cc Grey motorcycle<br> Ksh 2500 per hour</p>
+                <button class="btn bg-primary text-light">Rent Now</button>
+            </div>
+        </div>
+
+        <div class="col-md-4 div1">
+            <div class="card-body">
+                <img src="./images/unoboard.jpeg" alt="unoboard" height="230px">
+                <h6 class="fw-bold">UNO board game</h6>
+                <p>UNO flip board game to play with your friends<br> Ksh 700 </p>
+                <button class="btn bg-primary text-light">Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====Advert Section====== -->
+    <section>
+        <div style="position: relative; display: inline-block;">
+            <img src="http://127.0.0.1:5500/images/sale3.jpg" alt="Yard Sale" width="1100px" height="500px">
+
+            <button class="rounded" style="
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-80%);
+      padding: 12px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    " onclick="alert('Thank you for being part of our yard sale!!!')">
+                Join Our Yard Sale
+            </button>
+        </div>
+    </section>
+    <!-- =======About us section======== -->
+    <section class="row container-fluid" id="about">
+        <h2 id="aboutus" class="text-center my-4">About Us</h2>
+        <div class="col-md-6">
+            <h3 class="text-primary">Our Vision</h3>
+            <p>At Lendify, we envision a future where access to items is no longer a barrier but a bridge to
+                opportunity. We strive to create a world where individuals and businesses can access fair, transparent,
+                and affordable financial support.Lendify aims to empower people to grow, build, and achieve their goals
+                with confidence, regardless of their starting point.This is your trusted platform for individuals and
+                businesses.</p>
+        </div>
+
+        <div class="col-md-6">
+            <h3 class="text-primary">Our Mission</h3>
+            <p>Our main mission is to provide simple, fast, and fair access to items for individuals and businesses. We
+                are committed to using technology to remove barriers, improve transparency, and deliver reliable
+                financial solutions that meet real needs. By focusing on trust, efficiency, and customer empowerment, we
+                aim to support our users in making confident financial decisions and achieving sustainable growth.</p>
+        </div>
+
+    </section>
+
+    <!-- =====List Item Section===== -->
+    <section id="list" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">List Your Item</h2>
+            <form class="w-50 mx-auto">
+                <input class="form-control mb-2" placeholder="Item Name">
+                <input class="form-control mb-2" placeholder="Price per day">
+                <textarea class="form-control mb-2" placeholder="Description"></textarea>
+                <button class="btn btn-info w-100">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========Contact Section======= -->
+    <section class="bg-light text-center justify-content-center align-items-center" id="contacts">
+        <h1 class="text-dark bg-light" id="Contact">Contact Us</h1>
+        <div>Email Address: wangoithiongo@gmail.com</div>
+        <div>Phone Number: +254757821097</div>
+
+        <div class="footericons text-center my-2">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="./images/fb.png" alt="fbicon" width="30px" height="30px">
+            </a>
+
+            <a href="https://www.instagram.com/_.w4ng0i/" class="mx-2" target="_blank">
+                <img src="./images/ig.png" alt="igicon" width="30px" height="30px">
+            </a>
+
+            <a href="https://x.com/w4ngoi" target="_blank">
+                <img src="./images/x.png" alt="xicon" width="30px" height="30px">
+            </a>
+        </div>
+        <br>
+        <div class="pb-3">
+            <a class="btn btn-light text-secondary btn-rounded" href="mailto:wangoithiongo@gmail.com">Send Email</a>
+            <a class="btn btn-success text-light btn-rounded" href="https://wa.me/254757821094">Chat With Us</a>
+        </div>
+    </section>
+
+    <!-- ========Footer======== -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">© Lendify - All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
